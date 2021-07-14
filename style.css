@@ -237,11 +237,13 @@ footer p{
     }
     .banner{
         display: grid;
+        justify-content: center;
         grid-row-gap: 20px
     }
     .all-players , .container-details{
         margin-left: -80px;
         display: grid;
+        justify-content: center;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap:30px;
     }
@@ -252,7 +254,7 @@ footer p{
         width: 688px;
     }
     .team-ranking a{
-        margin-left: 320px;
+        margin-left: 260px;
     }
     table {
         width: 500px;
@@ -264,10 +266,10 @@ footer p{
         color: green;
     }
     .balls{
-        margin-left: 
         display: grid;
         grid-template-columns: repeat(2, 200px);
     }
+
     .ball img{
         width: 100px;
         height: 100px;
@@ -279,6 +281,78 @@ footer p{
     footer{
         width: 688px;
         margin-top: 100px;
+    }
+    .logo, .icon ,p {
+        text-align: center;
+    }  
+}
+
+/* ipad devices */
+@media only screen and (min-width:688px) and (max-width:1024px) {
+    header{
+        width: 1024px;
+        height: 1000px;
+    }
+    .menu li{
+        list-style:none;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+    .login{
+        margin-left: 200px;
+    }
+    .banner{
+        display: grid;
+        justify-content: center;
+        grid-row-gap: 20px
+    }
+    .all-players , .container-details{
+        width: 1000px;
+        margin-left: 50px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container-details{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-details p{
+        width: 500px;
+    }
+    .team-ranking{
+        width: 1024px;
+    }
+    .team-ranking a{
+        margin-left: 420px;
+    }
+    table {
+        width: 500px;
+        border-collapse: collapse;
+      }
+    .sports-balls h2{
+        margin-left: 500px;
+        font-size: 40px;
+        color: green;
+        justify-content: center;
+    }
+    .balls{
+        margin-left: 500px;
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    .ball img{
+        width: 100px;
+        height: 100px;
+        transition: transform 3s ease-in-out;
+    }
+    .ball:hover img{
+        transform:scale(1.5)
+    }
+    footer{
+        width: 1000px;
+        margin-top:100px;
     }
     .logo, .icon ,p {
         text-align: center;
