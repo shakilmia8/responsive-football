@@ -74,7 +74,7 @@ header:hover img{
 }
 .players{
     width: 330px;
-    height: 474px;
+    height: 600px;
     background-color: #fff;
     margin-bottom: 30px;
     box-shadow: #E7E6E6 1px 1px 20px 10px;
@@ -89,7 +89,7 @@ header:hover img{
 .player-details h2{
     margin-top: 10px;
     margin-bottom: 0px;
-    font-size: 40px;
+    font-size: 30px;
 }
 .player-details p{
     margin-top: 10px;
@@ -218,4 +218,72 @@ footer p{
 }
 .filled{
     color: #969CAC;
+}
+
+/* media queries */
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    header{
+        width: 100%;
+        height: 1050px;
+    }
+    .menu li{
+        list-style:none;
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+    .login{
+        margin-left: 30px;
+    }
+    .banner{
+        display: grid;
+        grid-row-gap: 20px
+    }
+    .all-players , .container-details{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap:30px;
+    }
+    .container-details p{
+        width: 500px;
+    }
+    .team-ranking{
+        width: 688px;
+    }
+    .team-ranking a{
+        margin-left: 320px;
+    }
+    table {
+        width: 500px;
+        border-collapse: collapse;
+        margin-left: 100px;
+      }
+    .sports-balls h2{
+        margin-left: 200px;
+        font-size: 40px;
+        color: green;
+    }
+    .balls{
+        margin-left: 
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+    .ball img{
+        width: 100px;
+        height: 100px;
+        transition: transform 3s ease-in-out;
+    }
+    .ball:hover img{
+        transform:scale(1.5)
+    }
+    footer{
+        width: 688px;
+        margin-top: 100px;
+    }
+    .logo, .icon ,p {
+        text-align: center;
+    }
+    
+    
+    
 }
