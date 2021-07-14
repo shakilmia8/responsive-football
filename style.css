@@ -224,8 +224,8 @@ footer p{
 /* mobile devices */
 @media only screen and (max-width:688px) {
     header{
-        width: 100%;
-        height: 1050px;
+        width: 688px;
+        height: 1100px;
     }
     .menu li{
         list-style:none;
@@ -240,6 +240,7 @@ footer p{
         grid-row-gap: 20px
     }
     .all-players , .container-details{
+        margin-left: -80px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap:30px;
@@ -256,7 +257,6 @@ footer p{
     table {
         width: 500px;
         border-collapse: collapse;
-        margin-left: 100px;
       }
     .sports-balls h2{
         margin-left: 200px;
@@ -282,8 +282,5 @@ footer p{
     }
     .logo, .icon ,p {
         text-align: center;
-    }
-    
-    
-    
+    }  
 }
