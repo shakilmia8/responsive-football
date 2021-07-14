@@ -16,9 +16,8 @@ header{
     width: 1440px;
     height: 600px;
 }
-.header:hover img{
-    transform: rotate(45deg);
-    
+header:hover img{
+    transform:scale(1.5)
 }
 .menu{
     display: flex;
@@ -45,7 +44,7 @@ header{
 .banner img{
     width: 556px;
     height: 438px;
-    transition: transform 5s ease-in-out;   
+    transition: transform 5s ease-in-out;  
 }
 .banner-details{
     padding: 0px 100px 0px 200px;
