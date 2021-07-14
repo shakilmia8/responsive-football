@@ -52,7 +52,9 @@ header:hover img{
 .banner-details h2{
     font-size: 60px;
 }
-.banner-details a{
+.banner-details a, .container-details a{
+    text-decoration: none;
+    color: #fff;
     background-color: #E02C6D;
     padding: 5px 10px;
 }
@@ -92,8 +94,76 @@ header:hover img{
 .player-details p{
     margin-top: 10px;
     text-align: justify;
+    color: #6C6C6B;
 }
 
+/* container style */
+
+.container-area{
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+.container-details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 120px;
+}
+.container-details img{
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+}
+.article h2{
+    font-size: 40px;
+    font-weight: 700px;
+}
+.article p{
+    text-align: justify;
+    color: #6C6C6B;
+}
+
+/* table style */
+
+.team-ranking{
+    margin-bottom: 50px;
+}
+.team-ranking a{
+    margin-left: 620px;
+    padding: 10px;
+    background-image: linear-gradient(gold, tomato);
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+.football-teams{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse;
+  }
+  
+  caption{
+      font-size: 70px;
+      font-weight: 700px;
+      color:mediumblue;
+  }
+
+  td, th {
+    border: 1px solid gray;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(2n) {
+    background-color: #dddddd;
+  }
+
+/* footer style */
 
 footer{
     text-align: center;
