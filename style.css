@@ -100,6 +100,7 @@ header:hover img{
 /* container style */
 
 .container-area{
+    width: 1440px;
     margin-top: 85px;
     margin-bottom: 85px;
 }
@@ -122,9 +123,10 @@ header:hover img{
     color: #6C6C6B;
 }
 
-/* table style */
+/* team ranking style */
 
 .team-ranking{
+    width: 1440px;
     margin-bottom: 50px;
 }
 .team-ranking a{
@@ -163,9 +165,39 @@ table {
     background-color: #dddddd;
   }
 
+/* sports ball style */
+
+.sports-balls{
+    width: 1440px;
+    display: grid;
+    justify-content: center;   
+}
+
+.sports-balls h2{
+    margin-left: 530px;
+    font-size: 60px;
+    color: green;
+}
+.balls{
+    margin-left: 200px;
+    width: 1300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.ball img{
+    width: 100px;
+    height: 100px;
+    transition: transform 3s ease-in-out;
+}
+.ball:hover img{
+    transform:scale(2)
+}
+
 /* footer style */
 
 footer{
+    margin-top: 100px;
+    width: 1440px;
     text-align: center;
 }
 footer p{
